@@ -11,6 +11,8 @@
     "check": "biome check --write ./"
   },
   "dependencies": {
+    "@auth/prisma-adapter": "^2.4.2",
+    "@prisma/client": "^5.18.0",
     "next": "14.2.5",
     "next-auth": "5.0.0-beta.20",
     "react": "^18",
@@ -24,6 +26,7 @@
     "devmoji": "^2.3.0",
     "lefthook": "^1.7.13",
     "postcss": "^8",
+    "prisma": "^5.18.0",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
