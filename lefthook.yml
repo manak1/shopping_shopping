@@ -1,0 +1,4 @@
+commit-msg:
+  commands:
+    prepare-commit-msg:
+      run: npx devmoji -e --lint
