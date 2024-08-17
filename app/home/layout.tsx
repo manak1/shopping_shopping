@@ -1,3 +1,5 @@
+import { Header } from "@/src/components/layouts/header";
+
 export default function HomeLayout({
   children, // will be a page or nested layout
 }: {
@@ -5,9 +7,7 @@ export default function HomeLayout({
 }) {
   return (
     <div>
-      <header className="w-full h-15 px-4 py-4 border-b font-bold">
-        ショッピングショッピング
-      </header>
+      <Header />
       {children}
     </div>
   );

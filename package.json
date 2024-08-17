@@ -12,7 +12,9 @@
     "migrate:dev": "dotenv -e .env.development -- npx prisma migrate dev",
     "generate": "prisma generate",
     "studio": "dotenv -e .env.development -- npx prisma studio",
-    "postinstall": "prisma generate"
+    "postinstall": "prisma generate",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@auth/prisma-adapter": "^2.4.2",
@@ -33,6 +35,15 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
+    "@chromatic-com/storybook": "^1.6.1",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/nextjs": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/test": "^8.2.9",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
@@ -40,6 +51,7 @@
     "lefthook": "^1.7.13",
     "postcss": "^8",
     "prisma": "^5.18.0",
+    "storybook": "^8.2.9",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   }
